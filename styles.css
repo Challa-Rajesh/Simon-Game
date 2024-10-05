@@ -1,116 +1,93 @@
+/* General Body Style */
 body {
-  text-align: center;
-  background-color: #011F3F;
   margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: 40%;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #011F3F 0%, #112D4E 50%, #0A174E 100%);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
-#level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  margin:  4%;
-  margin-bottom: 2%;
-  color: #FEF2BF;
-}
-
+/* Container */
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
-.btn {
-  margin: 25px;
-  display: inline-block;
-  height: 150px;
-  width: 150px;
-  border: 10px solid black;
-  border-radius: 20%;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
-}
-
-.nav_bar{
-  display: flex;
-  gap: 10px;
-  height: 50px;
-  background-color: #C0C0C0;
-  align-items: center;
-  margin: 20px;
-  border-radius: 10px;
-}
-.inst_button{
-  height: 40px;
-  width: 100px;
-  border-radius: 10px;
-  background-color: #011F3F;
-  margin-left: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.game_button{
-  height: 40px;
-  width: 100px;
-  border-radius: 10px;
-  background-color: #011F3F;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-#inst_body{
-  background-color: #011F3F;
-}
-#inst_heading{
-  font-family: 'Press Start 2P', cursive;
+/* Instruction Heading */
+#inst_heading {
+  display: block;
+  width: 400px;
+  padding: 15px 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  color: #FEF2BF;
-  margin-bottom: 80px;
-  margin-top: 40px;
+  color: black;
+  margin-bottom: 40px; /* Reduced bottom margin */
+  margin-top: 7%; /* Top margin remains */
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: gray;
+  transition: background-color 0.3s, color 0.3s;
 }
-#inst_list{
-  font-family: 'Press Start 2P', cursive;
+
+/* Instruction List */
+#inst_list {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   color: #FEF2BF;
   text-align: left;
   width: 80%;
   line-height: 1.7;
-  margin-left: 100px;
-  margin-top: -40px;
+  margin: 0 auto; /* Center align the list */
 }
 
-.active {
-  background-color: white;
-  color: black;
+
+/* Start Game Button */
+#start_game_button {
+  display: block;
+  width: 200px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: red;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  bottom: 20%;
+}
+
+
+/* Button Hover Effect */
+#start_game_button:hover {
+  background-color: #013f09;
+  color: white;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
 }
