@@ -1,0 +1,93 @@
+/* General Body Style */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: 40%;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #011F3F 0%, #112D4E 50%, #0A174E 100%);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+/* Instruction Heading */
+#inst_heading {
+  display: block;
+  width: 400px;
+  padding: 15px 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 40px; /* Reduced bottom margin */
+  margin-top: 7%; /* Top margin remains */
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: gray;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Instruction List */
+#inst_list {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #FEF2BF;
+  text-align: left;
+  width: 80%;
+  line-height: 1.7;
+  margin: 0 auto; /* Center align the list */
+}
+
+
+/* Start Game Button */
+#start_game_button {
+  display: block;
+  width: 200px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: red;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  bottom: 20%;
+}
+
+
+/* Button Hover Effect */
+#start_game_button:hover {
+  background-color: #013f09;
+  color: white;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
