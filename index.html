@@ -8,16 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="icon" href="./simonFevicon.jpg" type="image/jpg">
 </head>
-<body class="inst_body">
-    <nav class="nav_bar">
-        <div class="inst_button">
-          Instructions
-        </div>
-        <div class="game_button">
-          Game
-        </div>
-      </nav>
-    <h1 id="inst_heading">Instructions</h1>
+<body class="body inst_body">
+    <h1 id="inst_heading">Rules To Play</h1>
     <ul id="inst_list">
         <li>Start the game by pressing a key from the keyboard.</li>
         <li>The game consists of multiple levels.</li>
@@ -30,7 +22,13 @@
         <li>If you press a button in the wrong order, the game will be over.</li>
         <li>The difficulty increases with each level, testing your memory and concentration skills.</li>
     </ul>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./index.js" charset="utf-8"></script>
+    
+    <!-- Start Game Button -->
+    <button id="start_game_button" onclick="window.location.href='game.html'">Start Game</button>
+    
+    <!-- Footer with Copyright -->
+    <footer class="footer">
+        <p>&copy; 2024 Simon Game. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
