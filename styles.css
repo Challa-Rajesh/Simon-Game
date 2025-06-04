@@ -30,7 +30,7 @@ body {
   margin-top: 7%; /* Top margin remains */
   border-radius: 10px;
   border: none;
-  cursor: pointer;
+  cursor: default;
   text-transform: uppercase;
   background-color: gray;
   transition: background-color 0.3s, color 0.3s;
