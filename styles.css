@@ -59,7 +59,7 @@ body {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: red;
+  background-color: rgb(31, 71, 4);
   transition: background-color 0.3s, color 0.3s;
   position: absolute;
   bottom: 20%;
@@ -70,7 +70,6 @@ body {
 #start_game_button:hover {
   background-color: #013f09;
   color: white;
-  font-weight: bolder;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
